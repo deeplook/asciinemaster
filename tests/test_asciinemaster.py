@@ -5,9 +5,6 @@
 
 import pytest
 
-from asciinemaster import asciinemaster
-from asciinemaster import cli
-
 
 @pytest.fixture
 def response():
