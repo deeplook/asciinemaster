@@ -17,6 +17,8 @@ Asciinemaster
      :target: https://pyup.io/repos/github/deeplook/asciinemaster/
      :alt: Updates
 
+.. image:: https://mybinder.org/badge.svg
+     :target: https://mybinder.org/v2/gh/deeplook/asciinemaster/master?filepath=notebooks/tutorial.ipynb
 
 Asciinemaster contains some experiments to add features to drive Asciinema.
 

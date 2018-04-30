@@ -1,0 +1,6 @@
+name: asciimaster
+channels:
+ - conda-forge
+dependencies:
+ - asciimaster
+ - capturer
