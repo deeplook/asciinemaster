@@ -5,26 +5,20 @@ Main module.
 
 Execute/test a shell-like script and record as an Asciinema.org screencast.
 
-This will take a shell-like script, iterate over its commands, execute them,
-and record the commands and their respective output as an Asciinema.org
-screencast.
-
-Later, it will also take a shell-like script and the generated screencast from
-it, re-execute the script and compare the new screencast to the old one for
-testing purposes.
-
-Limitations:
+Current limitations:
 
 - multi-line commands will not show changes in the prompt (e.g. '> ')
 - commands in input scripts must be separated by one or more empty lines
+- each command is executed in its own shell, so
+- setting/reusing state (as shell variables) is not possible
+- ANSI escape codes are not properly supported, yet
 
 Done:
 
-- read $SHELL / $TERM and use values inside header of generated casts
 - use int(datetime.datetime.timestamp(datetime.datetime.now())) for timestamp value in header
   (reverse: datetime.datetime.fromtimestamp(1521147263.254088))
 - subtract timestamp value given in header from all output lines
-- read terminal's current width/height
+- read and use terminal's current width/height inside header of generated casts
 
 Todo:
 
