@@ -4,4 +4,4 @@
 
 __author__ = """Dinu Gherman"""
 __email__ = 'gherman@darwin.in-berlin.de'
-__version__ = '__version__ = '__version__ = '0.1.1'''
+__version__ = '__version__ = '__version__ = '0.2.0'''
